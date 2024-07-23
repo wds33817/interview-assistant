@@ -1,0 +1,35 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.conversation-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  overflow-y: auto; /* 允许垂直滚动 */
+  max-height: 1400px; /* 设置最大高度，超过时滚动 */
+  line-height: 1.8; /* 设置行高 */
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  display: inline-block;
+}
+
+.message.user {
+  background: #d1e7fd;
+  align-self: flex-end;
+}
+
+.message.ai {
+  background: #fde1e1;
+  align-self: flex-start;
+}
